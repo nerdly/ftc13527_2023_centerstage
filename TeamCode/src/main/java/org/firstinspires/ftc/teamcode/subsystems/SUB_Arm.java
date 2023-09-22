@@ -28,17 +28,13 @@ public class SUB_Arm extends SubsystemBase {
 //        m_pivotservo.setPwmRange(range);
     }
 
-    public setOpen(){
+    public void setOpen(){
         m_armservo.setPosition(1);
     }
 
-    public setClosed(){
+    public void setClosed(){
         m_armservo.setPosition(0);
     }
-
-     public void telemetry() {
-         m_opMode.telemetry.addData("Arm: ","StateID %d timer: %.2f %b", getState(), m_runTime.milliseconds(),getState() == ArmConstants.k_armBackID);
-     }
 
      public void periodic() {
 //        telemetry();

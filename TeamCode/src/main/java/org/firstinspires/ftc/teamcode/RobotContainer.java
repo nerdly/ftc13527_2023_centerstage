@@ -24,7 +24,7 @@ public class RobotContainer {
 
         frontCamera = new SUB_OpenCvCamera(p_opMode, "FrontCam");
         m_elevator = new SUB_Elevator(p_opMode, "ElevatorMotor1", "ElevatorMotor2", "ElevatorServo");
-        m_arm = new SUB_Arm(p_opMode, "ArmServo")
+        m_arm = new SUB_Arm(p_opMode, "ArmServo");
     };
 
     public void run() {
